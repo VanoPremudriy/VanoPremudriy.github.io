@@ -1,0 +1,41 @@
+#top-picture{
+    height: 200px; 
+    border-width: 1px; 
+    background-image: url(source/maxresdefault_live.jpg);
+    background-repeat: repeat-x; 
+    background-size: auto 200px;
+}
+
+
+.menu-item{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.menu-item:hover{
+    background-color: red;
+}
+
+.menu-item a{
+    color:white;
+}
+
+
+#first-nav{
+    border-left: solid;
+    border-width: 1px;
+}
+
+#second-nav{
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+}
+
+#third-nav{
+    border-right: solid;
+    border-right:solid;
+    border-width: 1px;
+}
