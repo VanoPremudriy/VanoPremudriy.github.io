@@ -1,7 +1,7 @@
 #top-picture{
     height: 200px; 
     border-width: 1px; 
-    background-image: url(source/maxresdefault_live.jpg);
+    background-image: url(Source/maxresdefault_live.jpg);
     background-repeat: repeat-x; 
     background-size: auto 200px;
 }
