@@ -6,12 +6,38 @@
     background-size: auto 200px;
 }
 
+#sign-reg{
+    margin-top: 50px;
+    margin-right: 10%;
+    align-items: flex-end;
+}
 
-.menu-item{
+#sign-reg > *{
+     color: #000; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  padding: 25px 40px; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+}
+
+@media(max-width:346px){
+    #sign-reg > *{
+        padding: 15px 25px;
+    }
+}
+
+#sing{
+    background-color: white;
+}
+#reg{
+    background-color: green;
+}
+
+.menu-item > a{
     height: 100px;
     width: 100px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 .menu-item:hover{
@@ -74,6 +100,45 @@
     border-color: black;
     border-width: 2px;
     height: 300px;
+    margin-left: 15px;
+}
+
+#genre > *:not(:first-child) > p{
+    margin-bottom: -1px;
+}
+
+#years-choice{
+    margin-top: 10px;
+}
+
+#age-choice{
+    margin-top: 10px;
+}
+
+#filter{
+    width: 100%;
+    border-bottom: black;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    height: 50px;
+    text-align: center;
+
+}
+#filter > p{
+    font-size: 20px;
+}
+
+#search-genre{
+    width: 90%;
+    margin-left: 5%;
+}
+
+#years{
+    align-content: flex-end;
+}
+
+#years > input{
+    width: 30%;
 }
 
 @media(max-width:576px){

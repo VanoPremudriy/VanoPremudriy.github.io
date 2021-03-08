@@ -9,7 +9,14 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-          <div class="container-fluid" id = "top-picture"></div>
+          <div class="container-fluid" id = "top-picture">
+            <div class = "row justify-content-end">
+              <div id = "sign-reg">
+                <button id = "sign"><b>Вход</b></button>
+                <button id = "reg"><b>Регистрация</b></button>
+              </div>
+            </div>
+          </div>
            <nav class="navbar navbar-expand-md navbar-expand-sm bg-danger " style=" height: 100px; white-space: nowrap;">
             <a class = "navbar-brand" href="#" style="height: 50px; margin-top: -50px;">
               <img src="Source/M.png" alt="Logo" style="height: 90px;"><span id="anga">anga</span>
@@ -35,7 +42,7 @@
         
           <div class = "container-fluid search">
           <div class="row justify-content-center">
-            <div class="col-sm-8">
+            <div class="col-xl-8 col-sm-10">
               <input type="search" id="search-manga" placeholder = "Найти мангу по названию">
             </div>
             
@@ -44,16 +51,44 @@
         <div class="row">
           
         </div>
+
         <div class="container-fluid main-field">
           <div class="row justify-content-center">
-            <div class="col-sm-6 order-lg-first order-sm-first order-xl-first order-last">
+            <div class="col-sm-6  col-xl-6 order-lg-first order-sm-first order-xl-first order-last">
                 <div id = "catalog">
 
                 </div>
             </div>
-            <div class="col-sm-2 order-lg-last order-sm-last order-xl-last order-first">
-            <div id = "genre">         
+            <div class="col-sm-4 col-xl-2 order-lg-last order-sm-last order-xl-last order-first">
+            <div id = "genre">       
+              <div id  = "filter">
+                  <p><b>Фильтр манги</b></p>
+              </div>  
+              <div id = "genre-choice">
+              <p>Выбор жанров:</p>
+              <select>
+                <option value="one">Седзе</option>
+                <option value="two">Сенэн</option>
+              </select>
+             </div>
+             <div id = "years-choice">
+              <p>Выбор годов</p>
+              <div id = "years">
+                  <input type="text" placeholder="От">
+                  -
+                  <input type="text" placeholder="До">
+              </div>
             </div>
+            <div id = "age-choice">
+              <p>Возрастной рейтинг:</p>
+              <select>
+                <option>Не учитывать</option>
+                <option>6+</option>
+                <option>13+</option>
+                <option>18+</option>
+              </select>
+            </div>
+          </div>
             </div>
           </div>
 
